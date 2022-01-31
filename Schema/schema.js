@@ -2,7 +2,7 @@ const joi = require("joi");
 
 const schema = {
   uuidSchema: joi.object({
-    uuid: joi.number().required().min(2).max(8),
+    uuid: joi.string().required().min(36).max(36),
   }),
 };
 module.exports = schema;
